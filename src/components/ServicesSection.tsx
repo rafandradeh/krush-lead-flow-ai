@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -13,19 +12,19 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ language }) => {
       subtitle: "Focus on your trade. We'll handle the marketing.",
       services: [
         {
-          title: "Bilingual Landing Pages",
-          description: "Conversion-optimized pages in English & Spanish that turn visitors into customers",
+          title: "Conversion-Optimized Landing Pages",
+          description: "Professional pages designed to turn visitors into customers",
           features: ["Mobile-responsive design", "Local SEO optimized", "A/B tested for conversions"]
         },
         {
           title: "Targeted Advertising",
-          description: "Geofenced campaigns on Google LSA and Meta targeting Hispanic markets",
+          description: "Geofenced campaigns on Google LSA and Meta targeting your local market",
           features: ["Google Local Service Ads", "Facebook & Instagram ads", "Geographic targeting"]
         },
         {
           title: "AI-Powered CRM",
-          description: "Automated lead nurturing that works 24/7 in both languages",
-          features: ["Automatic lead qualification", "Bilingual follow-up sequences", "Smart scheduling"]
+          description: "Automated lead nurturing that works 24/7",
+          features: ["Automatic lead qualification", "Smart follow-up sequences", "Intelligent scheduling"]
         },
         {
           title: "Reputation Management",
@@ -44,19 +43,19 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ language }) => {
       subtitle: "Concéntrese en su oficio. Nosotros manejamos el marketing.",
       services: [
         {
-          title: "Páginas de Destino Bilingües",
-          description: "Páginas optimizadas para conversión en inglés y español que convierten visitantes en clientes",
+          title: "Páginas de Destino Optimizadas para Conversión",
+          description: "Páginas profesionales diseñadas para convertir visitantes en clientes",
           features: ["Diseño responsive móvil", "Optimizado para SEO local", "Probado A/B para conversiones"]
         },
         {
           title: "Publicidad Dirigida",
-          description: "Campañas geofocalizadas en Google LSA y Meta dirigidas a mercados hispanos",
+          description: "Campañas geofocalizadas en Google LSA y Meta dirigidas a su mercado local",
           features: ["Anuncios de Servicio Local de Google", "Anuncios de Facebook e Instagram", "Orientación geográfica"]
         },
         {
           title: "CRM Impulsado por IA",
-          description: "Nutrición automatizada de clientes que funciona 24/7 en ambos idiomas",
-          features: ["Calificación automática de clientes", "Secuencias de seguimiento bilingües", "Programación inteligente"]
+          description: "Nutrición automatizada de clientes que funciona 24/7",
+          features: ["Calificación automática de clientes", "Secuencias de seguimiento inteligentes", "Programación inteligente"]
         },
         {
           title: "Gestión de Reputación",

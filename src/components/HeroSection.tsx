@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -12,15 +11,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) =
   const content = {
     en: {
       headline: "More Leads. More Jobs. No Extra Work.",
-      subheadline: "AI-Powered, Bilingual Growth Engine That Fills Your Calendar and Grows Your Reputation",
-      description: "Stop chasing leads that ghost you. Our proven system delivers 3x more qualified customers to Hispanic contractors in HVAC, Roofing, Plumbing, and Electrical services.",
+      subheadline: "AI-Powered Growth Engine That Fills Your Calendar and Grows Your Reputation",
+      description: "Stop chasing leads that ghost you. Our proven system delivers 3x more qualified customers to contractors in HVAC, Roofing, Plumbing, and Electrical services.",
       cta: "Get Free Analysis",
       guarantee: "90-Day Results Guarantee"
     },
     es: {
       headline: "Más Clientes. Más Trabajos. Sin Trabajo Extra.",
-      subheadline: "Motor de Crecimiento Bilingüe Impulsado por IA Que Llena Su Calendario y Aumenta Su Reputación",
-      description: "Deje de perseguir clientes que desaparecen. Nuestro sistema comprobado entrega 3x más clientes calificados a contratistas hispanos en HVAC, Techos, Plomería y Servicios Eléctricos.",
+      subheadline: "Motor de Crecimiento Impulsado por IA Que Llena Su Calendario y Aumenta Su Reputación",
+      description: "Deje de perseguir clientes que desaparecen. Nuestro sistema comprobado entrega 3x más clientes calificados a contratistas en HVAC, Techos, Plomería y Servicios Eléctricos.",
       cta: "Análisis Gratuito",
       guarantee: "Garantía de Resultados de 90 Días"
     }

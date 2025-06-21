@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface FooterProps {
@@ -9,7 +8,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
   const content = {
     en: {
       company: "Krush Media",
-      tagline: "AI-Powered Growth for Hispanic Contractors",
+      tagline: "AI-Powered Growth for Contractors",
       phone: "(555) 123-KRUSH",
       email: "hello@krushmedia.com",
       address: "Houston, TX | Los Angeles, CA | Miami, FL",
@@ -19,7 +18,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
     },
     es: {
       company: "Krush Media",
-      tagline: "Crecimiento Impulsado por IA para Contratistas Hispanos",
+      tagline: "Crecimiento Impulsado por IA para Contratistas",
       phone: "(555) 123-KRUSH",
       email: "hola@krushmedia.com",
       address: "Houston, TX | Los Angeles, CA | Miami, FL",

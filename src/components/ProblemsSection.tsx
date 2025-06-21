@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, MessageSquare, Check } from 'lucide-react';
@@ -26,7 +25,7 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({ language }) => {
         {
           icon: Check,
           title: "Outdated Marketing That Doesn't Work",
-          description: "Your current marketing approach isn't reaching the Hispanic market effectively, leaving money on the table."
+          description: "Your current marketing approach isn't reaching customers effectively, leaving money on the table."
         }
       ],
       solution: {
@@ -34,7 +33,7 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({ language }) => {
         points: [
           "AI-powered lead qualification filters out time-wasters",
           "Consistent pipeline keeps cash flowing year-round",
-          "Bilingual campaigns reach your ideal customers",
+          "Targeted campaigns reach your ideal customers",
           "Automated follow-up nurtures leads while you work"
         ]
       }
@@ -56,7 +55,7 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({ language }) => {
         {
           icon: Check,
           title: "Marketing Obsoleto Que No Funciona",
-          description: "Su enfoque de marketing actual no llega efectivamente al mercado hispano, dejando dinero sobre la mesa."
+          description: "Su enfoque de marketing actual no llega efectivamente a los clientes, dejando dinero sobre la mesa."
         }
       ],
       solution: {
@@ -64,7 +63,7 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({ language }) => {
         points: [
           "Calificación de clientes impulsada por IA filtra los que pierden tiempo",
           "Pipeline consistente mantiene el efectivo fluyendo todo el año",
-          "Campañas bilingües alcanzan a sus clientes ideales",
+          "Campañas dirigidas alcanzan a sus clientes ideales",
           "Seguimiento automatizado nutre clientes mientras usted trabaja"
         ]
       }

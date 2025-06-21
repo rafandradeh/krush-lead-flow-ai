@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
@@ -12,23 +11,23 @@ const CTASection: React.FC<CTASectionProps> = ({ language }) => {
   const content = {
     en: {
       title: "Ready to 3x Your Leads in 90 Days?",
-      subtitle: "Join hundreds of Hispanic contractors who've transformed their business with our proven system",
+      subtitle: "Join hundreds of contractors who've transformed their business with our proven system",
       benefits: [
         "No long-term contracts",
         "Full setup in 7 days",
         "90-day money-back guarantee",
-        "Dedicated bilingual support"
+        "Dedicated support team"
       ],
       urgency: "Limited spots available this month"
     },
     es: {
       title: "¿Listo para Triplicar Sus Clientes en 90 Días?",
-      subtitle: "Únase a cientos de contratistas hispanos que han transformado su negocio con nuestro sistema comprobado",
+      subtitle: "Únase a cientos de contratistas que han transformado su negocio con nuestro sistema comprobado",
       benefits: [
         "Sin contratos a largo plazo",
         "Configuración completa en 7 días",
         "Garantía de devolución de dinero de 90 días",
-        "Soporte bilingüe dedicado"
+        "Equipo de soporte dedicado"
       ],
       urgency: "Plazas limitadas disponibles este mes"
     }
