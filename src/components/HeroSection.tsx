@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -45,8 +46,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           loop
           playsInline
         >
+          <source src="https://videos.pexels.com/video-files/32724208/12577827_2560_1440_30fps.mp4" type="video/mp4" />
           <source src="https://videos.pexels.com/video-files/8486944/8486944-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
