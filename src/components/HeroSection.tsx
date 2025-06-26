@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -10,75 +11,107 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) => {
   const content = {
     en: {
-      headline: "More Leads. More Jobs. No Extra Work.",
-      subheadline: "AI-Powered Growth Engine That Fills Your Calendar and Grows Your Reputation",
-      description: "Stop chasing leads that ghost you. Our proven system delivers 3x more qualified customers to contractors in HVAC, Roofing, Plumbing, and Electrical services.",
-      cta: "Get Free Analysis",
-      guarantee: "90-Day Results Guarantee"
+      headline: "Transform Your",
+      highlightWord: "Marketing",
+      subheadline: "Strategy",
+      tagline: "with the Power of AI",
+      description: "Boost your campaign performance, increase ROI, and unlock data-driven insights with our advanced AI marketing solutions for contractors.",
+      cta: "Get Started",
+      guarantee: "90-Day Results Guarantee",
+      trustedBy: "40,000+",
+      trustedText: "Contractors trust us to grow their business"
     },
     es: {
-      headline: "Más Clientes. Más Trabajos. Sin Trabajo Extra.",
-      subheadline: "Motor de Crecimiento Impulsado por IA Que Llena Su Calendario y Aumenta Su Reputación",
-      description: "Deje de perseguir clientes que desaparecen. Nuestro sistema comprobado entrega 3x más clientes calificados a contratistas en HVAC, Techos, Plomería y Servicios Eléctricos.",
-      cta: "Análisis Gratuito",
-      guarantee: "Garantía de Resultados de 90 Días"
+      headline: "Transforma Tu",
+      highlightWord: "Marketing",
+      subheadline: "Estrategia",
+      tagline: "con el Poder de la IA",
+      description: "Mejora el rendimiento de tus campañas, aumenta el ROI y desbloquea insights impulsados por datos con nuestras soluciones avanzadas de marketing IA para contratistas.",
+      cta: "Comenzar",
+      guarantee: "Garantía de Resultados de 90 Días",
+      trustedBy: "40,000+",
+      trustedText: "Contratistas confían en nosotros para hacer crecer su negocio"
     }
   };
 
   const t = content[language];
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Background Pattern */}
       <div 
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          backgroundRepeat: 'repeat'
+          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)`
         }}
       ></div>
       
       <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-fade-in">
-            {t.headline}
-          </h1>
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Welcome Badge */}
+          <div className="inline-flex items-center px-4 py-2 bg-slate-800/50 backdrop-blur-sm rounded-full text-blue-300 text-sm font-medium mb-8 border border-slate-700/50">
+            Welcome to Krush Media ✨
+          </div>
           
-          {/* Subheadline */}
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-blue-100 mb-8 font-medium animate-fade-in animation-delay-200">
-            {t.subheadline}
-          </h2>
+          {/* Main Headline */}
+          <div className="space-y-2 mb-8">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-tight">
+              {t.headline}
+            </h1>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-tight">
+              <span className="text-blue-400 underline decoration-blue-400/30 decoration-4 underline-offset-8">
+                {t.highlightWord}
+              </span>{' '}
+              <span className="text-white italic font-light">
+                {t.subheadline}
+              </span>
+            </h1>
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-white/90 italic">
+              {t.tagline}
+            </h2>
+          </div>
           
           {/* Description */}
-          <p className="text-lg md:text-xl text-blue-200 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in animation-delay-400">
+          <p className="text-lg md:text-xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
             {t.description}
           </p>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in animation-delay-600">
+          {/* CTA Button */}
+          <div className="flex flex-col items-center gap-6 mb-16">
             <Button 
               onClick={onScrollToForm}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-4 px-12 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl border-0"
             >
-              {t.cta}
+              {t.cta} ✨
             </Button>
-            <div className="flex items-center text-green-300 font-semibold">
-              <div className="w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+            <div className="flex items-center text-green-300 font-medium text-sm">
+              <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
               {t.guarantee}
             </div>
           </div>
           
+          {/* Trust Section */}
+          <div className="border-t border-slate-700/50 pt-12">
+            <div className="text-center">
+              <div className="text-4xl md:text-5xl font-light text-white mb-2">
+                {t.trustedBy}
+              </div>
+              <p className="text-slate-400 text-sm font-light">
+                {t.trustedText}
+              </p>
+            </div>
+          </div>
+          
           {/* Scroll Indicator */}
-          <div className="animate-bounce">
-            <ArrowDown className="w-8 h-8 text-blue-300 mx-auto cursor-pointer" onClick={onScrollToForm} />
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <ArrowDown className="w-6 h-6 text-slate-400 cursor-pointer hover:text-blue-400 transition-colors" onClick={onScrollToForm} />
           </div>
         </div>
       </div>
       
       {/* Decorative Elements */}
-      <div className="absolute top-1/4 left-10 w-20 h-20 bg-orange-500/20 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-10 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse animation-delay-1000"></div>
+      <div className="absolute top-1/4 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
     </section>
   );
 };
