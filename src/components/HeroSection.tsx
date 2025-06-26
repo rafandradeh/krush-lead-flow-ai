@@ -45,8 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           loop
           playsInline
         >
-          <source src="https://videos.pexels.com/video-files/8053499/8053499-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/4992312/4992312-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+          <source src="https://videos.pexels.com/video-files/32724208/13951350_2560_1440_24fps.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
