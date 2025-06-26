@@ -34,17 +34,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     }
   };
   const t = content[language];
-  
   return <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          className="w-full h-full object-cover opacity-20"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
+        <video className="w-full h-full object-cover opacity-20" autoPlay muted loop playsInline>
           <source src="https://videos.pexels.com/video-files/32724208/13951350_2560_1440_24fps.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for better text readability */}
@@ -102,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
               {/* Trust Stats */}
               <div className="flex flex-col items-center lg:items-start">
-                <div className="text-4xl md:text-5xl font-light text-white mb-2">
+                <div className="text-4xl md:text-5xl font-light -bottom-1 -mb-20 rounded-none">
                   {t.trustedBy}
                 </div>
                 <p className="text-slate-400 text-sm font-light max-w-xs">
@@ -115,14 +108,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Logo Placeholders */}
               <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12 opacity-60">
-                {[1, 2, 3, 4, 5].map((index) => (
-                  <div 
-                    key={index} 
-                    className="flex items-center justify-center w-24 h-12 bg-slate-800/30 border border-slate-700/30 rounded-lg backdrop-blur-sm hover:bg-slate-700/30 transition-colors"
-                  >
+                {[1, 2, 3, 4, 5].map(index => <div key={index} className="flex items-center justify-center w-24 h-12 bg-slate-800/30 border border-slate-700/30 rounded-lg backdrop-blur-sm hover:bg-slate-700/30 transition-colors">
                     <div className="w-16 h-6 bg-slate-600/40 rounded"></div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
