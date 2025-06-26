@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -97,28 +98,16 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({ language }) =
             {t.industryTitle}
           </h3>
           
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            {/* Image */}
-            <div className="order-2 lg:order-1">
-              <img 
-                src="/lovable-uploads/96894946-d055-48dc-8719-b495276f1550.png" 
-                alt="Professional contractor" 
-                className="w-full rounded-lg"
-              />
-            </div>
-            
-            {/* Content */}
-            <div className="order-1 lg:order-2 text-left">
-              <h4 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-6">
-                {t.industrySubtitle}
-              </h4>
-              <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
-                {t.industryDescription}
-              </p>
-              <Button className="bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white px-8 py-3 rounded-full font-semibold">
-                {t.contactButton}
-              </Button>
-            </div>
+          <div className="max-w-4xl mx-auto text-center">
+            <h4 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-6">
+              {t.industrySubtitle}
+            </h4>
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-8">
+              {t.industryDescription}
+            </p>
+            <Button className="bg-gray-800 dark:bg-gray-700 hover:bg-gray-900 dark:hover:bg-gray-600 text-white px-8 py-3 rounded-full font-semibold">
+              {t.contactButton}
+            </Button>
           </div>
         </div>
 
