@@ -1,12 +1,9 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, MessageSquare, Check } from 'lucide-react';
-
 interface ProblemsSectionProps {
   language: 'en' | 'es';
 }
-
 const ProblemsSection: React.FC<ProblemsSectionProps> = ({
   language
 }) => {
@@ -54,24 +51,21 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
       }
     }
   };
-
   const t = content[language];
-
-  return (
-    <section className="py-20 bg-gradient-to-br from-stone-50 via-amber-50 to-cyan-50 dark:from-stone-900 dark:via-stone-800 dark:to-slate-900 relative overflow-hidden">
+  return <section className="py-20 bg-gradient-to-br from-stone-50 via-amber-50 to-cyan-50 dark:from-stone-900 dark:via-stone-800 dark:to-slate-900 relative overflow-hidden">
       {/* Subtle texture overlay inspired by the image */}
-      <div className="absolute inset-0 opacity-30" style={{
-        backgroundImage: `radial-gradient(circle at 20% 80%, rgba(217, 119, 6, 0.1) 0%, transparent 50%), 
+      <div style={{
+      backgroundImage: `radial-gradient(circle at 20% 80%, rgba(217, 119, 6, 0.1) 0%, transparent 50%), 
                          radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
                          radial-gradient(circle at 40% 40%, rgba(168, 85, 247, 0.05) 0%, transparent 50%)`
-      }}></div>
+    }} className="absolute inset-0 opacity-30 bg-gray-950"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-amber-600 to-orange-600 rounded-full mb-6 shadow-xl">
             <div className="w-6 h-6 bg-white rounded-full"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-stone-800 via-amber-800 to-stone-900 bg-clip-text text-transparent dark:from-stone-100 dark:via-amber-200 dark:to-stone-100">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-stone-800 via-amber-800 to-stone-900 bg-clip-text dark:from-stone-100 dark:via-amber-200 dark:to-stone-100 text-zinc-50 md:text-6xl">
             {t.title}
           </h2>
           <p className="text-xl font-semibold text-orange-600 dark:text-orange-400">
@@ -81,8 +75,7 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
 
         {/* Problems Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {t.problems.map((problem, index) => (
-            <Card key={index} className="bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 rounded-2xl overflow-hidden group hover:scale-105">
+          {t.problems.map((problem, index) => <Card key={index} className="bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm shadow-2xl hover:shadow-3xl transition-all duration-500 border-0 rounded-2xl overflow-hidden group hover:scale-105">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8 relative z-10">
                 <div className="flex items-center mb-6">
@@ -97,20 +90,19 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
                   {problem.description}
                 </p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Solution - Updated with sophisticated branding aesthetic */}
         <div className="bg-gradient-to-br from-slate-800 via-stone-700 to-amber-800 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden border border-amber-200/20">
           {/* Sophisticated texture overlay inspired by the branding image */}
-          <div className="absolute inset-0 opacity-20" style={{
-            backgroundImage: `
+          <div style={{
+          backgroundImage: `
               radial-gradient(circle at 25% 25%, rgba(14, 165, 233, 0.15) 0%, transparent 40%),
               radial-gradient(circle at 75% 75%, rgba(217, 119, 6, 0.12) 0%, transparent 40%),
               linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%)
             `
-          }}></div>
+        }} className="absolute inset-0 opacity-20 bg-gray-950"></div>
           
           {/* Elegant geometric accents */}
           <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-cyan-400/10 to-blue-500/10 rounded-full -translate-y-20 translate-x-20 blur-xl"></div>
@@ -130,16 +122,14 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
-              {t.solution.points.map((point, index) => (
-                <div key={index} className="flex items-start bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/12 hover:border-cyan-400/30 transition-all duration-300 group">
+              {t.solution.points.map((point, index) => <div key={index} className="flex items-start bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/12 hover:border-cyan-400/30 transition-all duration-300 group">
                   <div className="bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 p-2.5 rounded-xl mr-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                     <Check className="w-5 h-5 text-white" />
                   </div>
                   <p className="text-lg text-gray-100 leading-relaxed group-hover:text-white transition-colors duration-300">
                     {point}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             {/* Sophisticated bottom accent */}
@@ -153,8 +143,6 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProblemsSection;
