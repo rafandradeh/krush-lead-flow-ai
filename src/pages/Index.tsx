@@ -8,6 +8,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import LanguageToggle from '@/components/LanguageToggle';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Index = () => {
   const [language, setLanguage] = useState<'en' | 'es'>('en');
@@ -22,8 +23,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Fixed Language Toggle */}
-      <div className="fixed top-4 right-4 z-50">
+      {/* Fixed Controls */}
+      <div className="fixed top-4 right-4 z-50 flex items-center space-x-3">
+        <ThemeToggle />
         <LanguageToggle 
           currentLanguage={language} 
           onLanguageChange={setLanguage} 
