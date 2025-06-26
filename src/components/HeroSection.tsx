@@ -1,14 +1,14 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
-
 interface HeroSectionProps {
   language: 'en' | 'es';
   onScrollToForm: () => void;
 }
-
-const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({
+  language,
+  onScrollToForm
+}) => {
   const content = {
     en: {
       headline: "Transform Your",
@@ -33,18 +33,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) =
       trustedText: "Contratistas confían en nosotros para hacer crecer su negocio"
     }
   };
-
   const t = content[language];
-
-  return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Background Pattern */}
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)`
-        }}
-      ></div>
+      <div className="absolute inset-0 opacity-10" style={{
+      backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.15) 0%, transparent 50%)`
+    }}></div>
       
       <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
         <div className="max-w-5xl mx-auto text-center">
@@ -55,7 +49,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) =
           
           {/* Main Headline */}
           <div className="space-y-2 mb-8">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl text-white leading-tight font-bold">
               {t.headline}
             </h1>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-tight">
@@ -78,10 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) =
           
           {/* CTA Button */}
           <div className="flex flex-col items-center gap-6 mb-16">
-            <Button 
-              onClick={onScrollToForm}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-4 px-12 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl border-0"
-            >
+            <Button onClick={onScrollToForm} className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-4 px-12 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl border-0">
               {t.cta} ✨
             </Button>
             <div className="flex items-center text-green-300 font-medium text-sm">
@@ -112,8 +103,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ language, onScrollToForm }) =
       {/* Decorative Elements */}
       <div className="absolute top-1/4 left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-blue-400/10 rounded-full blur-3xl"></div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
