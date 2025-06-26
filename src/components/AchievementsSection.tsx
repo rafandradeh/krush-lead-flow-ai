@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -101,13 +100,11 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({ language }) =
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             {/* Image */}
             <div className="order-2 lg:order-1">
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-                <img 
-                  src="/lovable-uploads/96894946-d055-48dc-8719-b495276f1550.png" 
-                  alt="Professional contractor" 
-                  className="w-full rounded-lg"
-                />
-              </div>
+              <img 
+                src="/lovable-uploads/96894946-d055-48dc-8719-b495276f1550.png" 
+                alt="Professional contractor" 
+                className="w-full rounded-lg"
+              />
             </div>
             
             {/* Content */}
