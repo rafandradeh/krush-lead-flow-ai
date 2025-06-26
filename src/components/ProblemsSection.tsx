@@ -116,7 +116,7 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
           <div className="relative z-10">
             <div className="flex items-center justify-center mb-8">
               <div className="w-1 h-12 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
-              <h3 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-white via-cyan-100 to-blue-100 bg-clip-text text-transparent">
+              <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-white via-cyan-100 to-blue-100 bg-clip-text text-zinc-50 md:text-6xl">
                 {t.solution.title}
               </h3>
             </div>
