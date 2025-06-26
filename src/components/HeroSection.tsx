@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -81,15 +82,33 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
           </div>
           
-          {/* Trust Section */}
-          <div className="border-t border-slate-700/50 pt-12">
-            <div className="text-center">
-              <div className="text-4xl md:text-5xl font-light text-white mb-2">
-                {t.trustedBy}
+          {/* Trust Section with Logo Spaces */}
+          <div className="border-t border-slate-700/30 pt-16">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+              {/* Trust Stats */}
+              <div className="flex flex-col items-center lg:items-start">
+                <div className="text-4xl md:text-5xl font-light text-white mb-2">
+                  {t.trustedBy}
+                </div>
+                <p className="text-slate-400 text-sm font-light max-w-xs">
+                  {t.trustedText}
+                </p>
               </div>
-              <p className="text-slate-400 text-sm font-light">
-                {t.trustedText}
-              </p>
+              
+              {/* Vertical Divider */}
+              <div className="hidden lg:block w-px h-16 bg-slate-700/50"></div>
+              
+              {/* Logo Placeholders */}
+              <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12 opacity-60">
+                {[1, 2, 3, 4, 5].map((index) => (
+                  <div 
+                    key={index} 
+                    className="flex items-center justify-center w-24 h-12 bg-slate-800/30 border border-slate-700/30 rounded-lg backdrop-blur-sm hover:bg-slate-700/30 transition-colors"
+                  >
+                    <div className="w-16 h-6 bg-slate-600/40 rounded"></div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           
