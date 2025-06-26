@@ -34,12 +34,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     }
   };
   const t = content[language];
+  
   return <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full">
-        <video className="w-full h-full object-cover opacity-20" autoPlay muted loop playsInline>
-          <source src="https://videos.pexels.com/video-files/8486944/8486944-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-          <source src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+        <video
+          className="w-full h-full object-cover opacity-20"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="https://videos.pexels.com/video-files/32724208/13951350_2560_1440_24fps.mp4" type="video/mp4" />
         </video>
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60"></div>
@@ -62,8 +68,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             <h1 className="text-5xl md:text-7xl lg:text-8xl text-white leading-tight font-bold">
               {t.headline}
             </h1>
-            <h1 className="text-5xl lg:text-8xl leading-tight font-bold md:text-7xl">
-              <span className="text-blue-400 underline decoration-blue-400/30 decoration-4 underline-offset-8 text-center font-light text-6xl">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-tight">
+              <span className="text-blue-400 underline decoration-blue-400/30 decoration-4 underline-offset-8">
                 {t.highlightWord}
               </span>{' '}
               <span className="text-white italic font-light">
@@ -109,9 +115,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Logo Placeholders */}
               <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12 opacity-60">
-                {[1, 2, 3, 4, 5].map(index => <div key={index} className="flex items-center justify-center w-24 h-12 bg-slate-800/30 border border-slate-700/30 rounded-lg backdrop-blur-sm hover:bg-slate-700/30 transition-colors">
+                {[1, 2, 3, 4, 5].map((index) => (
+                  <div 
+                    key={index} 
+                    className="flex items-center justify-center w-24 h-12 bg-slate-800/30 border border-slate-700/30 rounded-lg backdrop-blur-sm hover:bg-slate-700/30 transition-colors"
+                  >
                     <div className="w-16 h-6 bg-slate-600/40 rounded"></div>
-                  </div>)}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
