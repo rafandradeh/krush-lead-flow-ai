@@ -101,27 +101,54 @@ const ProblemsSection: React.FC<ProblemsSectionProps> = ({
           ))}
         </div>
 
-        {/* Solution */}
-        <div className="bg-gradient-to-br from-cyan-600 via-blue-600 to-indigo-700 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
-          {/* Decorative elements inspired by the image */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
-          <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyan-300/20 rounded-full translate-y-12 -translate-x-12"></div>
+        {/* Solution - Updated with sophisticated branding aesthetic */}
+        <div className="bg-gradient-to-br from-slate-800 via-stone-700 to-amber-800 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden border border-amber-200/20">
+          {/* Sophisticated texture overlay inspired by the branding image */}
+          <div className="absolute inset-0 opacity-20" style={{
+            backgroundImage: `
+              radial-gradient(circle at 25% 25%, rgba(14, 165, 233, 0.15) 0%, transparent 40%),
+              radial-gradient(circle at 75% 75%, rgba(217, 119, 6, 0.12) 0%, transparent 40%),
+              linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%)
+            `
+          }}></div>
+          
+          {/* Elegant geometric accents */}
+          <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-cyan-400/10 to-blue-500/10 rounded-full -translate-y-20 translate-x-20 blur-xl"></div>
+          <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-amber-400/10 to-orange-500/10 rounded-full translate-y-16 -translate-x-16 blur-lg"></div>
+          
+          {/* Premium brand accent */}
+          <div className="absolute top-6 left-6">
+            <div className="w-3 h-3 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full shadow-lg"></div>
+          </div>
           
           <div className="relative z-10">
-            <h3 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent">
-              {t.solution.title}
-            </h3>
+            <div className="flex items-center justify-center mb-8">
+              <div className="w-1 h-12 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-full mr-4"></div>
+              <h3 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-white via-cyan-100 to-blue-100 bg-clip-text text-transparent">
+                {t.solution.title}
+              </h3>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-6">
               {t.solution.points.map((point, index) => (
-                <div key={index} className="flex items-start bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-all duration-300">
-                  <div className="bg-gradient-to-br from-green-400 to-emerald-500 p-2 rounded-xl mr-4 shadow-lg">
+                <div key={index} className="flex items-start bg-white/8 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/12 hover:border-cyan-400/30 transition-all duration-300 group">
+                  <div className="bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 p-2.5 rounded-xl mr-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                     <Check className="w-5 h-5 text-white" />
                   </div>
-                  <p className="text-lg text-cyan-50 leading-relaxed">
+                  <p className="text-lg text-gray-100 leading-relaxed group-hover:text-white transition-colors duration-300">
                     {point}
                   </p>
                 </div>
               ))}
+            </div>
+            
+            {/* Sophisticated bottom accent */}
+            <div className="mt-8 flex justify-center">
+              <div className="flex space-x-2">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
+              </div>
             </div>
           </div>
         </div>
