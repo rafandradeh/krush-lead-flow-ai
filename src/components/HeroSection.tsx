@@ -63,7 +63,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               {t.headline}
             </h1>
             <h1 className="text-5xl lg:text-8xl leading-tight font-bold md:text-7xl">
-              <span className="text-blue-400 underline decoration-blue-400/30 decoration-4 underline-offset-8">
+              <span className="text-blue-400 underline decoration-blue-400/30 decoration-4 underline-offset-8 text-center font-light text-6xl">
                 {t.highlightWord}
               </span>{' '}
               <span className="text-white italic font-light">
