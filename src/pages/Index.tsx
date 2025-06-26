@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import ProblemsSection from '@/components/ProblemsSection';
 import ServicesSection from '@/components/ServicesSection';
 import ROISection from '@/components/ROISection';
+import AchievementsSection from '@/components/AchievementsSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
@@ -37,6 +38,7 @@ const Index = () => {
       <ProblemsSection language={language} />
       <ServicesSection language={language} />
       <ROISection language={language} />
+      <AchievementsSection language={language} />
       <TestimonialsSection language={language} />
       
       <div ref={ctaRef}>
