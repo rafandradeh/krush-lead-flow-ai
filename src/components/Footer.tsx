@@ -31,7 +31,7 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
   const t = content[language];
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-700 dark:bg-gray-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-2">{t.company}</h3>

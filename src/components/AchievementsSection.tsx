@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -64,7 +63,7 @@ const AchievementsSection: React.FC<AchievementsSectionProps> = ({ language }) =
   const t = content[language];
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-20 bg-gray-100 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         {/* Achievements Stats */}
         <div className="text-center mb-16">
