@@ -38,7 +38,6 @@ const Footer: React.FC<FooterProps> = ({ language }) => {
           <p className="text-gray-400 mb-6">{t.tagline}</p>
           
           <div className="space-y-2 mb-8">
-            <p className="text-lg font-semibold">{t.phone}</p>
             <p className="text-gray-400">{t.email}</p>
             <p className="text-gray-400">{t.address}</p>
           </div>
